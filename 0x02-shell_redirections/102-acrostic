@@ -1,2 +1,2 @@
-#!/bin/bash/
-cut -c1 | paste -s | tr -d "[:blank:]"
+#!/bin/bash
+echo $(cut -b 1 | tr -d '\n'
