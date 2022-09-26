@@ -1,7 +1,8 @@
-# Install puppet flask
-exec { 'sudo apt-get install pip3':
+
+# Install puppet-lint
+exec { 'apt-get install -y ruby':
     path => '/usr/bin'
 }
-exec { 'gem install puppet -flask -v 2.1.0':
+exec { 'gem install puppet-lint -v 2.1.1':
     path => '/usr/bin'
 }
